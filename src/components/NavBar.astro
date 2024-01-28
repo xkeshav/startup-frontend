@@ -1,3 +1,7 @@
+---
+
+---
+
 <header id="navBg" class="header text-white bg-[#111] p-[1.25rem] z-10 fixed top-0 w-full lg:w-full xl:px-[10.2rem] 2xl:px-[18.2rem] lg:py-[1.5rem] shadow-[#0e0e0e] shadow-md"
 >
     <div class="nav-container max-w-[60rem] mx-auto">
@@ -82,9 +86,9 @@
     const menuToggle = document.querySelector("#menuToggle");
 
     menuToggle.addEventListener("click", () => {
-        const showMenu = document.querySelector("#menu-open");
-        const openBtn = document.querySelector('#openBtn')
-        const closeBtn = document.querySelector('#closeBtn')
+        const showMenu = document.querySelector("#menu-open") as HTMLElement;
+        const openBtn = document.querySelector('#openBtn') as HTMLElement;
+        const closeBtn = document.querySelector('#closeBtn') as HTMLElement;
 
         if (showMenu.style.display === "block") {
             showMenu.style.display = "none"
